@@ -1,4 +1,4 @@
-package com.energymost.rocking;
+package com.energymost.funkRocking;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

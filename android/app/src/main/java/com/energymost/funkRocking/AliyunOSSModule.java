@@ -1,4 +1,4 @@
-// package com.energymost.rocking;
+// package com.energymost.funkRocking;
 //
 // import android.util.Log;
 // import android.app.Activity;

@@ -1,4 +1,4 @@
-package com.energymost.rocking;
+package com.energymost.funkRocking;
 
 import android.app.Application;
 import android.util.Log;
@@ -41,7 +41,7 @@ public class MainApplication extends Application implements ReactApplication {
     try{
       String pkName = this.getPackageName();
       ApplicationInfo appInfo = this.getPackageManager().getApplicationInfo(pkName,PackageManager.GET_META_DATA);
-      String codepushKey=appInfo.metaData.getString("com.energymost.rocking.codepushKey");
+      String codepushKey=appInfo.metaData.getString("com.energymost.funkRocking.codepushKey");
       return codepushKey;
     }
     catch(NameNotFoundException exc){

@@ -1,4 +1,4 @@
-package com.energymost.rocking;
+package com.energymost.funkRocking;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

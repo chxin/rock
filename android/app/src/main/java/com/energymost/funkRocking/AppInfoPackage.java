@@ -1,4 +1,4 @@
-package com.energymost.rocking;
+package com.energymost.funkRocking;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
