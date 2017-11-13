@@ -11,8 +11,8 @@ function parseClipContent(text) {
   var itemType = null;
   var content = null;
   if(text.length>=6){
-    // 施耐德电气千里眼提示您有新工单(406)，请按时执行。
-    // 施耐德电气千里眼提示您设备报警(32A35)，请及时检查响应!
+    // 施耐德电气变频顾问提示您有新工单(406)，请按时执行。
+    // 施耐德电气变频顾问提示您设备报警(32A35)，请及时检查响应!
     var retAlarmStart=text.match(/\(([a-zA-Z0-9]*)\)/);
     console.warn('ddddd',text,retAlarmStart);
     if (!retAlarmStart||retAlarmStart.length<2) {
@@ -27,7 +27,7 @@ function parseClipContent(text) {
     var strMethod=keyInfo.substr(2,1);
     var strId=keyInfo.substring(3);
 
-    if (keyInfo.length<=4||strApp!=='01') {//01千里眼,02灯塔,04云能效,08万丈云
+    if (keyInfo.length<=4||strApp!=='01') {//01千里眼,02灯塔,04云能效,08万丈云,
       return {
         itemId:null,
         itemType:null,

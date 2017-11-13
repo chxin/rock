@@ -13,11 +13,11 @@
 	<key>URI</key>
 	<string>https://mobile.fm.energymost.com/api/</string>
 	<key>CFBundleName</key>
-	<string>千里眼</string>
+	<string>变频顾问</string>
 	<key>Bundle identifier</key>
 	<string>cn.com.schneider-electric.FunkDisco</string>
 	<key>Bundle name</key>
-	<string>千里眼</string>
+	<string>变频顾问</string>
 	<key>CFBundleIdentifier</key>
 	<string>cn.com.schneider-electric.FunkDisco</string>
 	<key>UpgradeUri</key>

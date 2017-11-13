@@ -13,7 +13,7 @@
 	<key>URI</key>
 	<string></string>
 	<key>CFBundleName</key>
-	<string>Rock_Test</string>
+	<string>FunkRock_Test</string>
 	<key>CFBundleIdentifier</key>
 	<string>cn.com.schneider-electric.FunkRock</string>
 	<key>UpgradeUri</key>

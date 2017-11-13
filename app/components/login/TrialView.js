@@ -28,7 +28,7 @@ export default class TrialView extends Component{
             <Icon type='icon_schneider_en' color='transparent' size={125} />
           </View>
           <View style={styles.textContainer}>
-            <Text style={styles.titleText}>{'千里眼'}</Text>
+            <Text style={styles.titleText}>{'变频顾问'}</Text>
             <Text style={styles.subTitleText}>{'智能配电数字化服务云平台'}</Text>
           </View>
         </View>

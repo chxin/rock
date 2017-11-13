@@ -23,7 +23,7 @@ export default class Form extends Component{
   _getTitle(){
     return (
       <View style={{marginBottom:18,marginLeft:0}}>
-        <Text style={{color:'white',fontSize:32,fontWeight:'600'}}>{'千里眼'}</Text>
+        <Text style={{color:'white',fontSize:32,fontWeight:'600'}}>{'变频顾问'}</Text>
         <Text style={{marginTop:12,color:'white',fontSize:20}}>{'智能配电数字化服务云平台'}</Text>
       </View>
     )
