@@ -198,22 +198,26 @@ export default class MyView extends Component{
   }
   _getToolbar(data){
     return (
-      <Toolbar title='我的'  />
+      <Toolbar title='关于'  />
     );
   }
   render() {
+
+    //test need open
+      // <ListSeperator/>
+      //   {this._renderRow(0)}
+      // <ListSeperator/>
+      //   {this._renderRow(1)}
+      // <ListSeperator/>
+      //   {this._renderRow(2)}
+      // <ListSeperator/>
+      //   {this._renderRow(3)}
     return (
       <View style={{flex:1,backgroundColor:LIST_BG}}>
         {this._getToolbar(this.props.user)}
         {this._getSection()}
-          <ListSeperator/>
-            {this._renderRow(0)}
-          <ListSeperator/>
-            {this._renderRow(1)}
-          <ListSeperator/>
-            {this._renderRow(2)}
-          <ListSeperator/>
-            {this._renderRow(3)}
+
+
           <ListSeperator/>
             {this._renderRow(4)}
           <ListSeperator/>

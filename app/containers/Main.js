@@ -58,17 +58,18 @@ class Main extends Component{
       // console.warn('pop');
       nav.popToTop();
     }
-    if (index===2) {
-      this.props.navigator.push({
-        id:'scan_from_building',
-        component:Scan,
-        sceneConfig:'FloatFromBottomAndroid',
-        passProps:{
-
-        }
-      });
-      return;
-    }
+    //test need open.
+    // if (index===2) {
+    //   this.props.navigator.push({
+    //     id:'scan_from_building',
+    //     component:Scan,
+    //     sceneConfig:'FloatFromBottomAndroid',
+    //     passProps:{
+    //
+    //     }
+    //   });
+    //   return;
+    // }
     this.viewPager.setPage(index);
     this.setState({selectedIndex:index},()=>{
       if(cb){
@@ -96,13 +97,14 @@ class Main extends Component{
     if(index === selectedIndex){
       if(selectedIndex === 1){
         component = (<Alarm navigator={this.props.navigator} route={{id:'alarm'}} />);
-      }else if (selectedIndex === 2) {
-
       }
-      else if (selectedIndex === 3) {
+      // else if (selectedIndex === 2) {
+      //
+      // }
+      else if (selectedIndex === 0) {
         component = (<Assets navigator={this.props.navigator} route={{id:'asset'}}/>);
       }
-      else if (selectedIndex === 4) {
+      else if (selectedIndex === 2) {
         component = (<My navigator={this.props.navigator} route={{id:'my'}}/>);
       }
       else if (selectedIndex === 0) {
@@ -119,12 +121,14 @@ class Main extends Component{
     // var message = notification.getMessage();
     // console.warn('remote message',message,typeof notification.getData(),notification.getData());
     var data = notification.getData();
-    if(data.Key === 'Ticket'){
-      this._tabChanged(0,()=>{
-        notificationHelper.setNotification(data);
-      });
-    }
-    else if (data.Key === 'Alarm') {
+    //test need open
+    // if(data.Key === 'Ticket'){
+    //   this._tabChanged(0,()=>{
+    //     notificationHelper.setNotification(data);
+    //   });
+    // }
+    // else
+    if (data.Key === 'Alarm') {
       this._tabChanged(1,()=>{
         notificationHelper.setNotification(data);
       });

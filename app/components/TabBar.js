@@ -14,7 +14,7 @@ export default class TabBar extends Component {
   }
   _getNewVersionIcon(text)
   {
-    if (text==='我的'&&this.props.needUpdate) {
+    if (text==='关于'&&this.props.needUpdate) {
       return (
         <View style={{backgroundColor:'red',width:10,height:10,borderRadius:20,
           position:'absolute',right:-8,
@@ -51,21 +51,22 @@ export default class TabBar extends Component {
       </View>
     );
   }
+// {text:'工单',
+//   normal:require('../images/tab_tickets_normal/tickets_normal.png'),
+//   selected:require('../images/tab_tickets_selected/tickets_selected.png')},
+
+// {text:'',
+// normal:require('../images/tab_scan_normal/tab_scan_normal.png'),
+// selected:require('../images/tab_scan_pressed/tab_scan_pressed.png')},
   render () {
     var items = [
-      {text:'工单',
-        normal:require('../images/tab_tickets_normal/tickets_normal.png'),
-        selected:require('../images/tab_tickets_selected/tickets_selected.png')},
-      {text:'报警',
-        normal:require('../images/tab_alarm_normal/alarm_normal.png'),
-        selected:require('../images/tab_alarm_selected/alarm_selected.png')},
-      {text:'',
-        normal:require('../images/tab_scan_normal/tab_scan_normal.png'),
-        selected:require('../images/tab_scan_pressed/tab_scan_pressed.png')},
       {text:'资产',
         normal:require('../images/tab_assets_normal/assets_normal.png'),
         selected:require('../images/tab_assets_selected/assets_selected.png')},
-      {text:'我的',
+      {text:'报警',
+        normal:require('../images/tab_alarm_normal/alarm_normal.png'),
+        selected:require('../images/tab_alarm_selected/alarm_selected.png')},
+      {text:'关于',
         normal:require('../images/tab_user_normal/user_normal.png'),
         selected:require('../images/tab_user_selected/user_selected.png'),}];
     var content = items.map((item,key) => {

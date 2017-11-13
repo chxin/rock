@@ -54,14 +54,8 @@ export default class Login extends Component{
               onSend={this.props.onSend}
               onSubmit={this.props.onSubmit}
               onInputChanged={this.props.onInputChanged}  />
-            <TouchFeedback style={{height:40,}} onPress={()=>{this.props.onSwitch();
-              dismissKeyboard()}}>
-              <View style={{alignItems:'center',justifyContent:'center',}}>
-                <View style={{marginTop:24,width:94,height:22,alignItems:'center',borderBottomWidth:1,borderColor:'white'}}>
-                  <Text style={styles.switcherText}>{text}</Text>
-                </View>
-              </View>
-            </TouchFeedback>
+
+
             <View style={{marginTop:1}}>
               <Image
                 source={require('../../images/app_building_bg/app_building_bg.png')}
@@ -85,6 +79,15 @@ export default class Login extends Component{
     )
   }
 }
+
+// <TouchFeedback style={{height:40,}} onPress={()=>{this.props.onSwitch();
+//   dismissKeyboard()}}>
+//   <View style={{alignItems:'center',justifyContent:'center',}}>
+//     <View style={{marginTop:24,width:94,height:22,alignItems:'center',borderBottomWidth:1,borderColor:'white'}}>
+//       <Text style={styles.switcherText}>{text}</Text>
+//     </View>
+//   </View>
+// </TouchFeedback>
 
 Login.propTypes = {
   type:PropTypes.string.isRequired,
