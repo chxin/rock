@@ -1,6 +1,8 @@
 source ./buildNumber.sh
-
+currCommit=$(git rev-parse --short HEAD)
 buildNumber=`getParamAndPlusone`
+
+description="$currCommit"_"$buildNumber"
 
 OUTPUTDIR="./buildTemp"
 APPNAME=$(date +'FunkRock'%Y-%m-%d-%H-%M-%S)
@@ -24,10 +26,7 @@ rm "$OUTPUTDIR/$APPNAME/$SCHEMETEST.ipa"
 xcodebuild -project "$APP_PROJECTPATH" -scheme "$SCHEMETEST" archive -archivePath "$OUTPUTDIR/$APPNAME.xcarchive" -quiet
 xcodebuild -exportArchive -archivePath "$OUTPUTDIR/$APPNAME.xcarchive" -exportPath "$OUTPUTDIR/$APPNAME" -exportOptionsPlist "exportTestOptions.plist" -quiet
 
-currCommit=$(git rev-parse --short HEAD)
-buildNumber=`getParamAndPlusone`
-
-curl -F "file=@$OUTPUTDIR/$APPNAME/$SCHEMETEST.ipa" -F "uKey= 24af41e3b5e5117e773a733378aefa29" -F "_api_key= 0691c7489e57a5158796f6e1e7e988bd" -F "installType=2" -F "password=123456" -F "updateDescription=$currCommit_$buildNumber" http://qiniu-storage.pgyer.com/apiv1/app/upload
+curl -F "file=@$OUTPUTDIR/$APPNAME/$SCHEMETEST.ipa" -F "uKey= 24af41e3b5e5117e773a733378aefa29" -F "_api_key= 0691c7489e57a5158796f6e1e7e988bd" -F "installType=2" -F "password=123456" -F "updateDescription=$description" http://qiniu-storage.pgyer.com/apiv1/app/upload
 
 # git checkout ${PLIST_PATH}
 # . ./mergeProd.sh
