@@ -66,7 +66,7 @@ export default class TabBar extends Component {
       {text:'报警',
         normal:require('../images/tab_alarm_normal/alarm_normal.png'),
         selected:require('../images/tab_alarm_selected/alarm_selected.png')},
-      {text:'关于',
+      {text:'我的',
         normal:require('../images/tab_user_normal/user_normal.png'),
         selected:require('../images/tab_user_selected/user_selected.png'),}];
     var content = items.map((item,key) => {

@@ -10,14 +10,13 @@ export var HEADERDEVICEID = "disco-deviceid";
 
 // var _BASEURL = "http://mobile.poptest.energymost.com/pop/v2.8.0/Mobile/api/";
 
-// var _BASEURL = "http://mobiletest.fm.energymost.com/pop/v4.2.0/Mobile/api/";
-var _BASEURL = "http://mobiletest.fm.energymost.com/test/pop/MobileHost/api/";
+var _BASEURL = "http://da-mobile-test.energymost.com/test/pop/MobileHost/api/";
 //dev
 // var _BASEURL = 'http://121.41.53.66/pop/v3.9.0/Mobile/api/';
 //xianjing
 // var _BASEURL = 'http://10.177.122.73/mobile/api/';
 //pro
-// var _BASEURL = "http://mobile.fm.energymost.com/api/";
+// var _BASEURL = "http://da-mobile.energymost.com/api/";
 
 export function getBaseUri() {
   return _BASEURL;
