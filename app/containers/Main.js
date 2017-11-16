@@ -41,6 +41,8 @@ import AlarmDetail from './alarm/AlarmDetail';
 var AlertManager = require('NativeModules').AlertManager;
 var DeviceInfo = require('react-native-device-info');
 
+import { BlurView, VibrancyView } from 'react-native-blur';//test
+
 var _stateChangedHandler = null;
 
 class Main extends Component{
