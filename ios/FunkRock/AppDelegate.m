@@ -16,6 +16,8 @@
 #import "RCTPushNotificationManager.h"
 #import "Orientation.h"
 #import <RNScreenshotDetector/RNScreenshotDetector.h>
+#import "VibrancyView.h"
+#import "BlurView.h"
 
 @implementation AppDelegate
 
@@ -60,7 +62,9 @@
 //   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
 //  [self initPush:application didFinishLaunchingWithOptions:launchOptions];
-
+  
+  VibrancyView *temp=[[VibrancyView alloc]init];//test
+  BlurView *temp1=[[BlurView alloc] init];//test
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"Rock"
