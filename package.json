@@ -1,5 +1,5 @@
 {
-  "name": "Rock",
+  "name": "FunkRock",
   "version": "0.5.0",
   "private": true,
   "scripts": {
@@ -21,6 +21,7 @@
     "react-mixin": "3.0.5",
     "react-native": "0.36.0",
     "react-native-barcodescanner": "3.0.0",
+    "react-native-blur": "1.2.0",
     "react-native-camera": "0.4.0",
     "react-native-code-push": "1.13.2-beta",
     "react-native-detect-new-photo": "0.0.3",
@@ -28,9 +29,10 @@
     "react-native-file-opener": "0.2.0",
     "react-native-fs": "2.0.1-rc.2",
     "react-native-gesture-responder": "0.1.1",
+    "react-native-image-crop-picker": "0.18.1",
     "react-native-image-picker": "0.23.0",
-    "react-native-keyboard-aware-scroll-view": "^0.2.7",
-    "react-native-modal-dropdown": "^0.4.1",
+    "react-native-keyboard-aware-scroll-view": "0.2.7",
+    "react-native-modal-dropdown": "0.4.1",
     "react-native-open-file": "git+https://github.com/samuelltk/react-native-open-file",
     "react-native-orientation": "git+https://github.com/yamill/react-native-orientation",
     "react-native-permissions": "0.2.5",
