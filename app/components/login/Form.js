@@ -24,7 +24,7 @@ export default class Form extends Component{
     return (
       <View style={{marginBottom:18,marginLeft:0}}>
         <Text style={{color:'white',fontSize:32,fontWeight:'600'}}>{'变频顾问'}</Text>
-        <Text style={{marginTop:12,color:'white',fontSize:20}}>{'数字化变频服务顾问'}</Text>
+        <Text style={{marginTop:12,color:'white',fontSize:20}}>{'变频器数字化服务平台'}</Text>
       </View>
     )
   }

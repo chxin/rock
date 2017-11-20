@@ -11,7 +11,6 @@ import android.content.Intent;
 
 import com.facebook.react.ReactApplication;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
-import com.cmcewen.blurview.BlurViewPackage;
 import fr.bamlab.rncameraroll.CameraRollPackage;
 import com.devialab.detectNewPhoto.RCTDetectNewPhotoPackage;
 import com.horcrux.svg.RNSvgPackage;
@@ -74,8 +73,7 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new SplashScreenPackage(),
           new MainReactPackage(),
-            new PickerPackage(),
-          new BlurViewPackage(),
+          new PickerPackage(),
           new AppInfoPackage(),
           new CodePush(MainApplication.this.getCodePushKey(), MainApplication.this, BuildConfig.DEBUG),
           new ScannerPackage(),

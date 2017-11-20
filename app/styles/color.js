@@ -2,7 +2,7 @@
 
 export const LINE = '#cfcfcf';
 
-export const GREEN = '#03b679';
+export const GREEN = '#3fc64d';
 // export const GRAY = '#abafae';
 export const GRAY = '#8e8e9c';
 
@@ -27,7 +27,7 @@ export const ALARM_MIDDLE = '#ff9200';
 export const ALARM_LOW = '#5a99ee';
 export const LOGOUT_RED = '#ec5d57';
 export const LIGHTGRAY = '#96a1ac';
-export const LOGIN_GREEN_DISABLED = '#06b67999';
+export const LOGIN_GREEN_DISABLED = '#3fc64d99';
 
 export const ALARM_FILTER_BUTTON_BORDER = LOGIN_SEP;
 export const CLEAN_FILTER_BORDER= '#e9e8e8';
