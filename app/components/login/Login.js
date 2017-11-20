@@ -54,16 +54,6 @@ export default class Login extends Component{
               onSend={this.props.onSend}
               onSubmit={this.props.onSubmit}
               onInputChanged={this.props.onInputChanged}  />
-
-
-            <View style={{marginTop:1}}>
-              <Image
-                source={require('../../images/app_building_bg/app_building_bg.png')}
-                resizeMode="stretch"
-                style={[styles.imageBackground,{height:334,width}]}
-                >
-              </Image>
-            </View>
           </View>
           <View style={{position:'absolute',top:bkgYPosi,backgroundColor:'#3DCD58',width,height:hBottomHeight,alignItems:'flex-end',justifyContent:'center',
             }}>
