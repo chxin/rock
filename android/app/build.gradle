@@ -97,8 +97,6 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
-        renderscriptTargetApi 20
-        renderscriptSupportModeEnabled true
     }
     splits {
         abi {
