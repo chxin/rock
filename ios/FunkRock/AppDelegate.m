@@ -18,6 +18,8 @@
 #import <RNScreenshotDetector/RNScreenshotDetector.h>
 #import "VibrancyView.h"
 #import "BlurView.h"
+#import "AFNetworking.h"
+#import "RSKInternalUtility.h"
 
 @implementation AppDelegate
 
@@ -77,10 +79,22 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   
+  [self doNoUsedCode];
+  
   RNScreenshotDetector* screenshotDetector = [[RNScreenshotDetector alloc] init];
   [screenshotDetector setupAndListen:rootView.bridge];
 
   return YES;
+}
+
+- (void)doNoUsedCode
+{
+  NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+  configuration.requestCachePolicy=NSURLRequestUseProtocolCachePolicy;
+  AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+  
+  NSURL *URL = [NSURL URLWithString:@"http://www.apple.com"];
+  NSURLRequest *request = [NSURLRequest requestWithURL:URL];
 }
 
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {

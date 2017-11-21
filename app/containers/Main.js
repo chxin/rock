@@ -42,7 +42,6 @@ var AlertManager = require('NativeModules').AlertManager;
 var DeviceInfo = require('react-native-device-info');
 
 import { BlurView, VibrancyView } from 'react-native-blur';//test
-import ImagePicker from 'react-native-image-crop-picker';//test
 
 var _stateChangedHandler = null;
 
@@ -397,11 +396,6 @@ class Main extends Component{
     if(Platform.OS === 'ios'){
       ScreenshotDetector.unsubscribe(this.eventEmitter);
     }
-    ImagePicker.clean().then(() => {
-
-    }).catch(e => {
-      
-    });
   }
   render() {
     return (

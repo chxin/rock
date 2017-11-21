@@ -32,11 +32,24 @@
 		7F7E14DA1DAF9E9E00D1113D /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E14D91DAF9E9500D1113D /* libRCTOrientation.a */; };
 		7F82C0611DB605AC0087D17C /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F82C0601DB605A10087D17C /* libRNSVG.a */; };
 		7F831B8F1E129E5800DE5A8F /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F831B791E129E1C00DE5A8F /* libART.a */; };
+		7F8F5D981FC4113A00261112 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5D8C1FC4113A00261112 /* AFHTTPSessionManager.m */; };
+		7F8F5D991FC4113A00261112 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5D8F1FC4113A00261112 /* AFNetworkReachabilityManager.m */; };
+		7F8F5D9A1FC4113A00261112 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5D911FC4113A00261112 /* AFSecurityPolicy.m */; };
+		7F8F5D9B1FC4113A00261112 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5D931FC4113A00261112 /* AFURLRequestSerialization.m */; };
+		7F8F5D9C1FC4113A00261112 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5D951FC4113A00261112 /* AFURLResponseSerialization.m */; };
+		7F8F5D9D1FC4113A00261112 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5D971FC4113A00261112 /* AFURLSessionManager.m */; };
+		7F8F5DB11FC4117600261112 /* CGGeometry+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DA01FC4117600261112 /* CGGeometry+RSKImageCropper.m */; };
+		7F8F5DB21FC4117600261112 /* RSKImageCropperStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F8F5DA31FC4117600261112 /* RSKImageCropperStrings.bundle */; };
+		7F8F5DB31FC4117600261112 /* RSKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DA61FC4117600261112 /* RSKImageCropViewController.m */; };
+		7F8F5DB41FC4117600261112 /* RSKImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DA81FC4117600261112 /* RSKImageScrollView.m */; };
+		7F8F5DB51FC4117600261112 /* RSKInternalUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DAA1FC4117600261112 /* RSKInternalUtility.m */; };
+		7F8F5DB61FC4117600261112 /* RSKTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DAC1FC4117600261112 /* RSKTouchView.m */; };
+		7F8F5DB71FC4117600261112 /* UIApplication+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DAE1FC4117600261112 /* UIApplication+RSKImageCropper.m */; };
+		7F8F5DB81FC4117600261112 /* UIImage+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F5DB01FC4117600261112 /* UIImage+RSKImageCropper.m */; };
 		7FB22A581D87EA9B009F4EB4 /* libRNFileOpener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB22A551D87E9D8009F4EB4 /* libRNFileOpener.a */; };
 		7FB22A6A1D87EC3D009F4EB4 /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB22A691D87EC2D009F4EB4 /* libRNFS.a */; };
 		7FBD428E1D190F860070747F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD428D1D190F860070747F /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7FD7759F1D617E3D00549270 /* libReactNativePermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD7759D1D617E1000549270 /* libReactNativePermissions.a */; };
-		7FE827651FC275F4003A5580 /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F373FD61FBD99090044EDA8 /* libimageCropPicker.a */; };
 		7FE827661FC275F4003A5580 /* libRNBlur.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F373FAB1FBD8D810044EDA8 /* libRNBlur.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		B46E97431CDB3BF900BEE306 /* ALBBSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E1D38C1CDB30BC00B42638 /* ALBBSDK.framework */; };
@@ -139,13 +152,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = A68BD7BC1BC31318005F02DF;
 			remoteInfo = RNBlur;
-		};
-		7F373FD51FBD99090044EDA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E15BB45196BA4C5D8F259CA7 /* imageCropPicker.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3400A8081CEB54A6008A0BC7;
-			remoteInfo = imageCropPicker;
 		};
 		7F4094E01E6FFDF000BECB9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -296,6 +302,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7F8F5D631FC40B3C00261112 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -328,6 +347,37 @@
 		7F7E14D41DAF9E9500D1113D /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
 		7F82C05B1DB605A00087D17C /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		7F831B741E129E1C00DE5A8F /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		7F8F5D8B1FC4113A00261112 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		7F8F5D8C1FC4113A00261112 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		7F8F5D8D1FC4113A00261112 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		7F8F5D8E1FC4113A00261112 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		7F8F5D8F1FC4113A00261112 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		7F8F5D901FC4113A00261112 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		7F8F5D911FC4113A00261112 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7F8F5D921FC4113A00261112 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		7F8F5D931FC4113A00261112 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		7F8F5D941FC4113A00261112 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		7F8F5D951FC4113A00261112 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		7F8F5D961FC4113A00261112 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		7F8F5D971FC4113A00261112 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		7F8F5D9F1FC4117600261112 /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
+		7F8F5DA01FC4117600261112 /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
+		7F8F5DA11FC4117600261112 /* RSKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSKImageCropper.h; sourceTree = "<group>"; };
+		7F8F5DA21FC4117600261112 /* RSKImageCropper.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = RSKImageCropper.modulemap; sourceTree = "<group>"; };
+		7F8F5DA31FC4117600261112 /* RSKImageCropperStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RSKImageCropperStrings.bundle; sourceTree = "<group>"; };
+		7F8F5DA41FC4117600261112 /* RSKImageCropViewController+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropViewController+Protected.h"; sourceTree = "<group>"; };
+		7F8F5DA51FC4117600261112 /* RSKImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSKImageCropViewController.h; sourceTree = "<group>"; };
+		7F8F5DA61FC4117600261112 /* RSKImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSKImageCropViewController.m; sourceTree = "<group>"; };
+		7F8F5DA71FC4117600261112 /* RSKImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSKImageScrollView.h; sourceTree = "<group>"; };
+		7F8F5DA81FC4117600261112 /* RSKImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSKImageScrollView.m; sourceTree = "<group>"; };
+		7F8F5DA91FC4117600261112 /* RSKInternalUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSKInternalUtility.h; sourceTree = "<group>"; };
+		7F8F5DAA1FC4117600261112 /* RSKInternalUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSKInternalUtility.m; sourceTree = "<group>"; };
+		7F8F5DAB1FC4117600261112 /* RSKTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSKTouchView.h; sourceTree = "<group>"; };
+		7F8F5DAC1FC4117600261112 /* RSKTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSKTouchView.m; sourceTree = "<group>"; };
+		7F8F5DAD1FC4117600261112 /* UIApplication+RSKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+RSKImageCropper.h"; sourceTree = "<group>"; };
+		7F8F5DAE1FC4117600261112 /* UIApplication+RSKImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+RSKImageCropper.m"; sourceTree = "<group>"; };
+		7F8F5DAF1FC4117600261112 /* UIImage+RSKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RSKImageCropper.h"; sourceTree = "<group>"; };
+		7F8F5DB01FC4117600261112 /* UIImage+RSKImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RSKImageCropper.m"; sourceTree = "<group>"; };
 		7FB22A411D87E9D8009F4EB4 /* RNFileOpener.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFileOpener.xcodeproj; path = "../node_modules/react-native-file-opener/ios/RNFileOpener.xcodeproj"; sourceTree = "<group>"; };
 		7FB22A641D87EC2D009F4EB4 /* RNFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 		7FBD428D1D190F860070747F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -348,7 +398,6 @@
 		B4E1D3971CDB30DD00B42638 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B4E1D39A1CDB311F00B42638 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B4E1D39C1CDB314400B42638 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		E15BB45196BA4C5D8F259CA7 /* imageCropPicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = imageCropPicker.xcodeproj; path = "../node_modules/react-native-image-crop-picker/ios/imageCropPicker.xcodeproj"; sourceTree = "<group>"; };
 		FEC1088659A54F3A8F8EFF85 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -357,7 +406,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE827651FC275F4003A5580 /* libimageCropPicker.a in Frameworks */,
 				7FE827661FC275F4003A5580 /* libRNBlur.a in Frameworks */,
 				7F55746E1E8ACCCC00AA8E3F /* libRNScreenshotDetector.a in Frameworks */,
 				7F55746D1E8ACCC600AA8E3F /* libDetectNewPhoto.a in Frameworks */,
@@ -522,14 +570,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F373FCF1FBD99090044EDA8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7F373FD61FBD99090044EDA8 /* libimageCropPicker.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7F4095511E70E91F00BECB9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +636,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7F8F5D8A1FC4113A00261112 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				7F8F5D8B1FC4113A00261112 /* AFHTTPSessionManager.h */,
+				7F8F5D8C1FC4113A00261112 /* AFHTTPSessionManager.m */,
+				7F8F5D8D1FC4113A00261112 /* AFNetworking.h */,
+				7F8F5D8E1FC4113A00261112 /* AFNetworkReachabilityManager.h */,
+				7F8F5D8F1FC4113A00261112 /* AFNetworkReachabilityManager.m */,
+				7F8F5D901FC4113A00261112 /* AFSecurityPolicy.h */,
+				7F8F5D911FC4113A00261112 /* AFSecurityPolicy.m */,
+				7F8F5D921FC4113A00261112 /* AFURLRequestSerialization.h */,
+				7F8F5D931FC4113A00261112 /* AFURLRequestSerialization.m */,
+				7F8F5D941FC4113A00261112 /* AFURLResponseSerialization.h */,
+				7F8F5D951FC4113A00261112 /* AFURLResponseSerialization.m */,
+				7F8F5D961FC4113A00261112 /* AFURLSessionManager.h */,
+				7F8F5D971FC4113A00261112 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = libs/CodeObfuscation/AFNetworking;
+			sourceTree = "<group>";
+		};
+		7F8F5D9E1FC4117600261112 /* RSKImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				7F8F5D9F1FC4117600261112 /* CGGeometry+RSKImageCropper.h */,
+				7F8F5DA01FC4117600261112 /* CGGeometry+RSKImageCropper.m */,
+				7F8F5DA11FC4117600261112 /* RSKImageCropper.h */,
+				7F8F5DA21FC4117600261112 /* RSKImageCropper.modulemap */,
+				7F8F5DA31FC4117600261112 /* RSKImageCropperStrings.bundle */,
+				7F8F5DA41FC4117600261112 /* RSKImageCropViewController+Protected.h */,
+				7F8F5DA51FC4117600261112 /* RSKImageCropViewController.h */,
+				7F8F5DA61FC4117600261112 /* RSKImageCropViewController.m */,
+				7F8F5DA71FC4117600261112 /* RSKImageScrollView.h */,
+				7F8F5DA81FC4117600261112 /* RSKImageScrollView.m */,
+				7F8F5DA91FC4117600261112 /* RSKInternalUtility.h */,
+				7F8F5DAA1FC4117600261112 /* RSKInternalUtility.m */,
+				7F8F5DAB1FC4117600261112 /* RSKTouchView.h */,
+				7F8F5DAC1FC4117600261112 /* RSKTouchView.m */,
+				7F8F5DAD1FC4117600261112 /* UIApplication+RSKImageCropper.h */,
+				7F8F5DAE1FC4117600261112 /* UIApplication+RSKImageCropper.m */,
+				7F8F5DAF1FC4117600261112 /* UIImage+RSKImageCropper.h */,
+				7F8F5DB01FC4117600261112 /* UIImage+RSKImageCropper.m */,
+			);
+			name = RSKImageCropper;
+			path = libs/CodeObfuscation/RSKImageCropper;
+			sourceTree = "<group>";
+		};
 		7FB22A421D87E9D8009F4EB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,6 +717,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7F8F5D8A1FC4113A00261112 /* AFNetworking */,
+				7F8F5D9E1FC4117600261112 /* RSKImageCropper */,
 				7F831B741E129E1C00DE5A8F /* ART.xcodeproj */,
 				7F82C05B1DB605A00087D17C /* RNSVG.xcodeproj */,
 				7F7E14D41DAF9E9500D1113D /* RCTOrientation.xcodeproj */,
@@ -656,7 +745,6 @@
 				80E0C6EDD8CD470A98BF85E7 /* RNScreenshotDetector.xcodeproj */,
 				FEC1088659A54F3A8F8EFF85 /* RNDeviceInfo.xcodeproj */,
 				51D41B3687F74281A821CB51 /* RNBlur.xcodeproj */,
-				E15BB45196BA4C5D8F259CA7 /* imageCropPicker.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -760,6 +848,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				7F8F5D631FC40B3C00261112 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -792,6 +881,11 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				es,
+				ja,
+				pl,
+				"zh-Hans",
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -808,10 +902,6 @@
 				{
 					ProductGroup = 7F4095511E70E91F00BECB9B /* Products */;
 					ProjectRef = 7453FE1AEDDB4EEDB071607C /* DetectNewPhoto.xcodeproj */;
-				},
-				{
-					ProductGroup = 7F373FCF1FBD99090044EDA8 /* Products */;
-					ProjectRef = E15BB45196BA4C5D8F259CA7 /* imageCropPicker.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -998,13 +1088,6 @@
 			remoteRef = 7F373FAA1FBD8D810044EDA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7F373FD61FBD99090044EDA8 /* libimageCropPicker.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libimageCropPicker.a;
-			remoteRef = 7F373FD51FBD99090044EDA8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		7F4094E11E6FFDF000BECB9B /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1162,6 +1245,7 @@
 				B4E1D39E1CDB318200B42638 /* ALBB.bundle in Resources */,
 				7F5AA5B51FB970B70063B47D /* prod.plist in Resources */,
 				7F5AA5B21FB970B70063B47D /* Images.xcassets in Resources */,
+				7F8F5DB21FC4117600261112 /* RSKImageCropperStrings.bundle in Resources */,
 				7F5AA5B11FB970B70063B47D /* LaunchScreen.xib in Resources */,
 				7F771A841CCF55060026DEC6 /* fontcustom.ttf in Resources */,
 				7F5AA5B81FB970B70063B47D /* test.plist in Resources */,
@@ -1192,10 +1276,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8F5DB41FC4117600261112 /* RSKImageScrollView.m in Sources */,
+				7F8F5D9D1FC4113A00261112 /* AFURLSessionManager.m in Sources */,
+				7F8F5DB11FC4117600261112 /* CGGeometry+RSKImageCropper.m in Sources */,
+				7F8F5D9A1FC4113A00261112 /* AFSecurityPolicy.m in Sources */,
+				7F8F5D991FC4113A00261112 /* AFNetworkReachabilityManager.m in Sources */,
+				7F8F5DB71FC4117600261112 /* UIApplication+RSKImageCropper.m in Sources */,
 				7F5AA5B41FB970B70063B47D /* main.m in Sources */,
+				7F8F5DB81FC4117600261112 /* UIImage+RSKImageCropper.m in Sources */,
+				7F8F5DB61FC4117600261112 /* RSKTouchView.m in Sources */,
+				7F8F5D981FC4113A00261112 /* AFHTTPSessionManager.m in Sources */,
 				7F5AA5B61FB970B70063B47D /* REMAppInfo.m in Sources */,
 				7F5AA5B01FB970B70063B47D /* AppDelegate.m in Sources */,
+				7F8F5D9B1FC4113A00261112 /* AFURLRequestSerialization.m in Sources */,
+				7F8F5DB51FC4117600261112 /* RSKInternalUtility.m in Sources */,
+				7F8F5DB31FC4117600261112 /* RSKImageCropViewController.m in Sources */,
 				7F5AA5B71FB970B70063B47D /* REMPushNotification.m in Sources */,
+				7F8F5D9C1FC4113A00261112 /* AFURLResponseSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1246,7 +1343,6 @@
 					"$(SRCROOT)/../node_modules/react-native-screenshot-detector/ios/RNScreenshotDetector",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-blur/ios/**",
-					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 				);
 				INFOPLIST_FILE = FunkRock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1298,7 +1394,6 @@
 					"$(SRCROOT)/../node_modules/react-native-screenshot-detector/ios/RNScreenshotDetector",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-blur/ios/**",
-					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
 				);
 				INFOPLIST_FILE = FunkRock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
