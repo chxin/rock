@@ -33,7 +33,7 @@
     "react-native-keyboard-aware-scroll-view": "0.2.7",
     "react-native-modal-dropdown": "0.4.1",
     "react-native-open-file": "git+https://github.com/samuelltk/react-native-open-file",
-    "react-native-orientation": "git+https://github.com/yamill/react-native-orientation",
+    "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git#9a796cf0790491bd7d96b905496dc43383316d0e",
     "react-native-permissions": "0.2.5",
     "react-native-root-toast": "1.0.3",
     "react-native-screenshot-detector": "git+https://github.com/samuelltk/react-native-screenshot-detector",
