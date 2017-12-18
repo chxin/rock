@@ -72,7 +72,7 @@ export default class NetworkText extends Component {
         console.warn('will open file...');
         this.fileOpen(downFilePath,type);
       }else {
-        const ret = RNFS.downloadFile({ fromUrl: url, toFile: downFilePath, begin, progress, false, progressDivider ,headers});
+        const ret = RNFS.downloadFile({ fromUrl: url, toFile: downFilePath, begin, progress, background:false, progressDivider ,headers});
         console.warn('start down load file with id:',ret.jobId);
         jobId = ret.jobId;
 
