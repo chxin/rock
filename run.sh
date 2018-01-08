@@ -1,18 +1,17 @@
 #echo run build
 date +'android start build time:'%Y-%m-%d-%H-%M-%S
 rm ../build_file/*.apk
-
-cp ./android/customModules/ShareModule.java ./node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/modules/share/ShareModule.java
+# cp ./android/customModules/ShareModule.java ./node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/modules/share/ShareModule.java
 
 # rm ../android/local.properties
-source ./configEnvScripts/findAndReplace.sh && getFileAndChangeJcenter && changeJSCHeader && changeBuildVersion
+# source ./configEnvScripts/findAndReplace.sh && getFileAndChangeJcenter && changeJSCHeader && changeBuildVersion
 #手动修改buildToolVision
 
-cd ../android// && ./gradlew clean
+npm install
+rm -rf ./node_modules/react-native-svg/android/build
 
-cp -f ../downloadResources/boost_1_57_0.zip ./node_modules/react-native/ReactAndroid/build/downloads/boost_1_57_0.zip
+# cp -f ../downloadResources/boost_1_57_0.zip ./node_modules/react-native/ReactAndroid/build/downloads/boost_1_57_0.zip
 
-#npm install
 cd android && ./gradlew assembleRelease
 cd ..
 
