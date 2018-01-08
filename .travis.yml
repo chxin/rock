@@ -10,10 +10,10 @@ install: #1.2
   - npm install
   - rm -rf node_modules/react-native-svg/android/build
   # android-ndk
-  - wget http://dl.google.com/android/ndk/android-ndk-r10e-darwin-x86_64.bin
-  - sudo chmod +x android-ndk-r10e-darwin-x86_64.bin
+  - wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
+  - sudo chmod +x android-ndk-r10e-linux-x86_64.bin
   - ls -l
-  - ./android-ndk-r10e-darwin-x86_64.bin
+  - ./android-ndk-r10e-linux-x86_64.bin
   - export ANDROID_NDK=`pwd`/android-ndk-r10e
 android: #1.3
   components:
