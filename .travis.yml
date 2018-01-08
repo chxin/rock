@@ -10,11 +10,11 @@ install: #1.2
   - npm install
   - rm -rf node_modules/react-native-svg/android/build
   # android-ndk
-  - wget http://dl.google.com/android/ndk/android-ndk-r10e-darwin-x86_64.bin
-  - chmod +x android-ndk-r10e-darwin-x86_64.bin
-  - ./android-ndk-r10e-darwin-x86_64.bin
+  - wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
+  - chmod +x android-ndk-r10e-linux-x86_64.bin
+  - ./android-ndk-r10e-linux-x86_64.bin
+  - ls
   - export ANDROID_NDK=`pwd`/android-ndk-r10e
-  - export ANDROID_NDK
 android: #1.3
   components:
   - build-tools-23.0.1
@@ -33,3 +33,4 @@ script:
   - cd ./app/build/outputs/apk
   - ls
   
+  - curl -F 'file=@app-release-1.0.apk' -F 'uKey=7d42c69844b88157360fe2dc141fdf1a' -F '_api_key=be1290e71bb2fab7a9547cda2ee37d7b' 'https://www.pgyer.com/apiv1/app/upload'
