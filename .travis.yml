@@ -1,18 +1,17 @@
 language: android
 # - tools
 # - platform-tools
-sudo: required
-os: osx
+sudo: false
 
 before_install:
   - nvm install 6
   - node --version
 
-  # - wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
-  # - chmod +x android-ndk-r10e-linux-x86_64.bin
-  # - ./android-ndk-r10e-linux-x86_64.bin | grep ndk-build.cmd
-  # - export ANDROID_NDK=`pwd`/android-ndk-r10e
-  # - echo $ANDROID_NDK
+  - wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
+  - chmod +x android-ndk-r10e-linux-x86_64.bin
+  - ./android-ndk-r10e-linux-x86_64.bin | grep ndk-build.cmd
+  - export ANDROID_NDK=`pwd`/android-ndk-r10e
+  - echo $ANDROID_NDK
 install: 
   - npm install
 android:
@@ -28,7 +27,7 @@ cache:
   - node_modules
 script:
   - cd android 
-  - ./gradlew assembleRelease 
+  - ./gradlew assembleRelease | grep fail
   - cd ./app/build/outputs/apk
   - ls
   # - curl -F 'file=@app-release-1.0.apk' -F 'uKey=7d42c69844b88157360fe2dc141fdf1a' -F '_api_key=be1290e71bb2fab7a9547cda2ee37d7b' 'https://www.pgyer.com/apiv1/app/upload'
