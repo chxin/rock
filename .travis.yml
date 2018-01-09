@@ -1,7 +1,8 @@
 language: android
 # - tools
 # - platform-tools
-sudo: false
+sudo: required
+os: osx
 
 before_install:
   - nvm install 6
