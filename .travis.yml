@@ -6,6 +6,11 @@ sudo: false
 before_install:
   - nvm install 6
   - node --version
+
+  - wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86.bin
+  - chmod +x android-ndk-r10e-linux-x86.bin
+  - ./android-ndk-r10e-linux-x86.bin
+  - export ANDROID_NDK=`pwd`/android-ndk-r10e
 install: 
   - npm install
 android:
@@ -15,12 +20,12 @@ android:
   - extra-google-google_play_services
   - extra-google-m2repository
   - extra-android-m2repository
-  - addon-google_apis-google-26
+  - addon-google_apis-google-16
 cache:
   directories:
   - node_modules
 script:
-  - cd android
+  - cd android 
   - ./gradlew assembleRelease 
   - cd ./app/build/outputs/apk
   - ls
