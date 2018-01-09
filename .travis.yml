@@ -5,12 +5,13 @@ os: osx
 #   global:
 #     - ndkVersion=r10e
 before_install: #1.1
-  - nvm install 6
+  - brew update
+  - brew install nodejs
   - node --version
+  - brew install wget
 install: #1.2
   - npm install
   - rm -rf node_modules/react-native-svg/android/build
-  # - brew install wget
   # android-ndk
   - wget http://dl.google.com/android/ndk/android-ndk-r10e-darwin-x86_64.bin
   - chmod +x android-ndk-r10e-darwin-x86_64.bin
