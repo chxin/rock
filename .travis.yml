@@ -1,16 +1,16 @@
 language: android
 sudo: enabled
 os: osx
-env:
-  global:
-    - ndkVersion=r10e
+# env:
+#   global:
+#     - ndkVersion=r10e
 before_install: #1.1
   - nvm install 6
   - node --version
 install: #1.2
   - npm install
   - rm -rf node_modules/react-native-svg/android/build
-  - brew install wget
+  # - brew install wget
   # android-ndk
   - wget http://dl.google.com/android/ndk/android-ndk-r10e-darwin-x86_64.bin
   - chmod +x android-ndk-r10e-darwin-x86_64.bin
