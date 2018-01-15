@@ -42,11 +42,8 @@ setParam()
 	export rockBuildNum=$1
 }
 
-git clone https://github.com/chxin/cache.git
+# git clone https://github.com/chxin/cache.git
 getParamAndPlusone
-cd cache
-git add .profile
-git commit -m "rockBuildNum is $rockBuildNum"
+git add cache/.profile
+git commit -m "rockBuildNum is $rockBuildNum [ skip ci ]"
 git push -u origin master
-cd -
-rm -rf cache
