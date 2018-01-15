@@ -3,12 +3,12 @@ function getParamAndPlusone()
 	arg1="rockBuildNum"
 	ifglobal=0
 
-	if [ ! -f ~/Documents/.profile ]
+	if [ ! -f ./cache/.profile ]
 	then
-		touch -f ~/Documents/.profile
+		touch -f ./cache/.profile
 	fi
 
-	for member in `cat ~/Documents/.profile`
+	for member in `cat ./cache/.profile`
 	do
 	key1=${member%=*}
 	value1=${member#*=}
@@ -38,15 +38,15 @@ function getParamAndPlusone()
 
 setParam()
 {
-	echo "rockBuildNum=$1">~/Documents/.profile
+	echo "rockBuildNum=$1">./cache/.profile
+	export rockBuildNum=$1
 }
 
-# initParam()
-# {
-# 	echo "rockBuildNum=1">~/Documents/shell/.profile
-# }
-
-
-# getParamAndPlusone
-# Number=$?
-# echo $Number
+git clone https://github.com/chxin/cache.git
+getParamAndPlusone
+cd cache
+git add .profile
+git commit -m "rockBuildNum is $rockBuildNum"
+git push -u origin master
+cd -
+rm -rf cache

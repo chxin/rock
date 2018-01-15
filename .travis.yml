@@ -18,7 +18,9 @@ android:
   components:
   - build-tools-23.0.1
   - build-tools-23.0.2
-  - android-23 
+  - build-tools-26.0.1
+  - android-23
+  - android-25
   - extra-google-google_play_services
   - extra-google-m2repository
   - extra-android-m2repository
@@ -27,8 +29,10 @@ cache:
   directories:
   - node_modules
 script:
-  - cd android 
-  - ./gradlew assembleRelease | grep fail
-  - cd ./app/build/outputs/apk
-  - ls
-  - curl -F 'file=@app-internal-release-5.3.1.apk' -F 'uKey=7d42c69844b88157360fe2dc141fdf1a' -F '_api_key=be1290e71bb2fab7a9547cda2ee37d7b' 'https://www.pgyer.com/apiv1/app/upload'
+  # - cd android 
+  # - ./gradlew assembleRelease | grep android
+  # - cd ./app/build/outputs/apk
+  # - ls
+  # - curl -F 'file=@app-internal-release-5.3.1.apk' -F 'uKey=7d42c69844b88157360fe2dc141fdf1a' -F '_api_key=be1290e71bb2fab7a9547cda2ee37d7b' 'https://www.pgyer.com/apiv1/app/upload'
+  - chmod +x buildNumber.sh
+  - ./buildNumber.sh
