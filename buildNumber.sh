@@ -45,5 +45,5 @@ setParam()
 # git clone https://github.com/chxin/cache.git
 getParamAndPlusone
 git add cache/.profile
-git commit -m "rockBuildNum is $rockBuildNum [ skip ci ]"
+git commit -m "[ci skip]rockBuildNum is $rockBuildNum "
 git push -u origin master
